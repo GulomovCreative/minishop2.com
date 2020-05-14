@@ -1,0 +1,1 @@
+# minishop2.com
