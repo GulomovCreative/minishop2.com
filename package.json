@@ -1,0 +1,45 @@
+{
+  "name": "minishop2.com",
+  "version": "1.0.0",
+  "description": "An MODX Extra for minishop2.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GulomovCreative/minishop2.com.git"
+  },
+  "keywords": [
+    "modx"
+  ],
+  "author": "gulomov.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GulomovCreative/minishop2.com/issues"
+  },
+  "homepage": "https://github.com/GulomovCreative/minishop2.com#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "browserslist": "^4.8.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-include": "^2.4.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.1",
+    "postcss-prettify": "^0.3.4"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
