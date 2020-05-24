@@ -51,24 +51,46 @@ html(lang="ru-RU")
     meta(name='msapplication-TileImage', content='/assets/images/favicons/ms-icon-144x144.png')
     meta(name='theme-color', content='#ffffff')
 
+    //- CSS
+    link(rel="stylesheet", href="./assets/css/style.css")
+
     //- Preload fonts
-    //- link(type='font/woff', href=require('source/assets/fonts/ProximaNova/ProximaNova-Extrabld.woff'), rel='preload', as='font', crossorigin)
-    //- link(type='font/woff', href=require('source/assets/fonts/ProximaNova/ProximaNova-Regular.woff'), rel='preload', as='font', crossorigin)
-    //- link(type='font/woff', href=require('source/assets/fonts/ProximaNova/ProximaNova-Bold.woff'), rel='preload', as='font', crossorigin)
-    //- link(type='font/woff', href=require('source/assets/fonts/ProximaNova/ProximaNova-SemiBold.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('../fonts/Montserrat/Montserrat-Extrabold.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('../fonts/Montserrat/Montserrat-Regular.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('../fonts/Montserrat/Montserrat-Bold.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('../fonts/Montserrat/Montserrat-SemiBold.woff'), rel='preload', as='font', crossorigin)
 
     //- Title
-    block title
-      title Your project!
+    title miniShop2
 
     //- Manifest browserconfig files
-    block manifestBrowserconfigFiles
-      link(rel='manifest', href='./manifest.json')
-      meta(name='msapplication-config' content='./browserconfig.xml')
+    link(rel='manifest', href='./manifest.json')
+    meta(name='msapplication-config' content='./browserconfig.xml')
   body
-    +b.block1
-      +e.element1 Foo
-      +b.block2
-        +e.A(href="#bar").element Bar
-      +e.element2 Baz
-
+    +b.HEADER.header
+      .wrapper
+        +b.DIV.header__top
+          +e.A.logo(href="/") miniShop2
+          +e.NAV.menu
+            +b.UL.top__menu
+              +e.LI.item
+                +e.A.link(href="#") Home
+              +e.LI.item
+                +e.A.link(href="#") Recipes
+              +e.LI.item
+                +e.A.link(href="#") Shop
+              +e.LI.item
+                +e.A.link(href="#") About Us
+              +e.LI.item
+                +e.A.link(href="#") Contacts
+          +e.NAV.links
+            +b.UL.links__list
+              +e.LI.item
+                +e.A.link(href="#")
+                  img(src="assets/images/github-icon.svg", alt="")
+              +e.LI.item.lang
+                +e.A.link(href="#") RU
+        +b.DIV.header__content
+          +e.H1.title Самый гибкий интернет магазин для MODX
+          +e.DIV.description She clutched the matron by the arm, and forcing her into a chai She clutched the matron by the arm, and forcing her into a chai She clutched the matron by the arm, and forcing her into a chai She clutched the matron by the arm, and forcing her into a chai
+          +b.A.button.button--blue С чего начать
