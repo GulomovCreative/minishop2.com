@@ -706,6 +706,21 @@ img {
   background-color: #4f5362;
   padding-top: 70px;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.team:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-image: url("../images/bg_team.jpg");
+  opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .team__title {
@@ -752,7 +767,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px 20px;
+}
+
+.team__button {
+  margin: 0 auto;
 }
 
 .team__item {
