@@ -31,6 +31,7 @@ html(lang="ru-RU")
     meta(property='og:description', content='')
     meta(property='og:image', content='')
     meta(property='og:type', content='website')
+    meta(property='og:og:locale', content='ru_RU')
 
 
     //- Favicons
@@ -69,8 +70,10 @@ html(lang="ru-RU")
   body
     +b.HEADER.header
       .wrapper
-        +b.DIV.header__top
-          +e.A.logo(href="/") miniShop2
+        +b.DIV.header__top(itemscope itemtype="http://schema.org/Organization")
+          +e.A.logo(itemprop="url")(href="/")
+            span(itemprop="logo") miniShop2
+            meta(itemprop="name", content="Название сайта")
           +e.NAV.menu
             +b.UL.top__menu
               +e.LI.item
@@ -85,9 +88,6 @@ html(lang="ru-RU")
                 +e.A.link(href="#") Contacts
           +e.NAV.links
             +b.UL.links__list
-              +e.LI.item
-                +e.A.link(href="#")
-                  img(src="assets/images/github-icon.svg", alt="")
               +e.LI.item.lang
                 +e.A.link(href="#") RU
         +b.DIV.header__content
@@ -285,16 +285,19 @@ html(lang="ru-RU")
       +e.DIV.wrapper.wrapper
         +e.info
           +b.NAV.footer__nav
-            +e.UL
-              +e.LI.item
-                +e.A.link(href="#") Докумментация
-              +e.LI.item
-                +e.A.link(href="#") GitHub
-              +e.LI.item
-                +e.A.link(href="#") магазин дополнений
-              +e.LI.item
-                +e.A.link(href="#") Демо сайт
+            +e.UL(itemscope itemtype="http://www.schema.org/SiteNavigationElement")
+              +e.LI.item(itemprop="name")
+                +e.A.link(href="#", itemprop="url") Документация
+              +e.LI.item(itemprop="name")
+                +e.A.link(href="#", itemprop="url") GitHub
+              +e.LI.item(itemprop="name")
+                +e.A.link(href="#", itemprop="url") магазин дополнений
+              +e.LI.item(itemprop="name")
+                +e.A.link(href="#", itemprop="url") Демо сайт
           +b.footer__copyryte
             +e.made Сделано с
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><switch><g><path d="M65.4 21.5c-8.3 0-15.3 4.6-15.3 14.7 0-10.1-7.1-14.7-15.4-14.7s-15 8.2-15 18.3c-.6 20.1 30.4 38.7 30.4 38.7s30.7-18.6 30.1-38.7c.1-10.1-6.5-18.3-14.8-18.3z" fill="red" stroke="red" stroke-width="1.825" stroke-linejoin="round" stroke-miterlimit="10"/></g></switch></svg>
-            +e.copyryte-text Copyright © 2015 minishop2.com
+            +e.copyryte-text(itemscope itemtype="http://schema.org/WPFooter")
+              | Copyright ©
+              span(itemprop="copyrightYear") 2015
+              | minishop2.com
