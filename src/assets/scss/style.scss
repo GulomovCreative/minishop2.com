@@ -366,6 +366,7 @@ html {
   -webkit-text-size-adjust: 100%;
   background-color: #fff;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -426,6 +427,15 @@ img {
       color: #1f5dea;
     }
   }
+  &--white {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: #222328;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -438,3 +448,4 @@ img {
 @import '../scss/header.scss';
 @import '../scss/team.scss';
 @import '../scss/blog.scss';
+@import '../scss/how.scss';
