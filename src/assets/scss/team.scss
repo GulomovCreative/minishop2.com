@@ -31,11 +31,13 @@
     &__item {
       border: 2px solid #767885;
       border-radius: 5px;
-      width: 530px;
-      height: 140px;
+      width: 100%;
+      max-width: 530px;
     }
     &__wrap {
       padding: 20px;
+      display: flex;
+      justify-content: space-between;
     }
     &__info {
     }
@@ -82,8 +84,6 @@
       height: auto;
       border-radius: 100px;
     }
-  }
-  &__info {
   }
   &__name {
     color: white;

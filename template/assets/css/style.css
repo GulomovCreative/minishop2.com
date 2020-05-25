@@ -4809,12 +4809,14 @@ img {
 .team .founder__item {
   border: 2px solid #767885;
   border-radius: 5px;
-  width: 530px;
-  height: 140px;
+  width: 100%;
+  max-width: 530px;
 }
 
 .team .founder__wrap {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team .founder__name {
@@ -5086,5 +5088,94 @@ img {
   }
   .how__text {
     font-size: 13px;
+  }
+}
+
+.footer {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #222328;
+  background-image: url(../images/bg_footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__item {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer__item:hover {
+  opacity: 0.5;
+}
+
+.footer__link {
+  color: white;
+}
+
+.footer__copyryte-text {
+  color: white;
+  line-height: 2;
+  text-align: center;
+}
+
+.footer__made {
+  display: flex;
+  align-items: center;
+  font-size: 42px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.footer__made svg {
+  height: 70px;
+  width: auto;
+}
+
+@media (max-width: 570px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__made {
+    font-size: 32px;
+  }
+  .footer__nav ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
