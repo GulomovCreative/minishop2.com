@@ -1,0 +1,22 @@
+.article {
+    padding: 15px 0;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.125;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    &__time {
+        text-align: right;
+        font-weight: 600;
+        color: $text-gray;
+        text-transform: uppercase;
+    }
+}

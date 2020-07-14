@@ -1,0 +1,18 @@
+section.section.section--dark.team#team
+    .container
+        .headline.headline--white
+            h2.headline__title
+                | Сделано с 
+                span.text-danger <любовью> 
+                | этой командой
+        .row
+            each img, name in {'bezumkin': 'https://avatars0.githubusercontent.com/u/1257284?v=4','vgrish': 'https://avatars2.githubusercontent.com/u/3117525?v=4','argnist': 'https://avatars0.githubusercontent.com/u/1428987?v=4','Ibochkarev': 'https://avatars0.githubusercontent.com/u/2138260?v=4','GulomovCreative': 'https://avatars0.githubusercontent.com/u/20814058?v=4','webinmd': 'https://avatars3.githubusercontent.com/u/966234?v=4'}
+                .col-12.col-lg-4
+                    a(href="#").user
+                        .user__avatar
+                            img.user__img(src=img)
+                        .user__body
+                            .user__name= name
+                            .user__position= name
+        .text-center
+            a.button.button--outline(href="#" rel="nofollow" target="_blank") Посмотреть всех
