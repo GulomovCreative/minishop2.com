@@ -1,0 +1,86 @@
+.user {
+    $self: &;
+
+    display: flex;
+    align-items: center;
+    border-radius: $border-radius;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    padding: 25px 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    @include hover {
+        text-decoration: none;
+
+        #{$self}__avatar {
+            &::before {
+                transform: scale(20);
+            }
+        }
+
+        #{$self}__name,
+        #{$self}__position {
+            color: $white;
+        }
+    }
+
+    &__avatar {
+        position: relative;
+
+        +#{$self}__body {
+            margin-left: 20px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            width: 98%;
+            height: 98%;
+            background-color: $primary;
+            border-radius: 50%;
+            transition: transform .25s ease-in;
+            z-index: 0;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 70px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $text-gray;
+        transition: color $transition;
+
+        +#{$self}__position {
+            margin-top: .5rem;
+        }
+    }
+
+    &__position {
+        font-size: 12px;
+        font-weight: 300;
+        color: $gray-700;
+        transition: color $transition;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .user {
+        margin-bottom: 30px;
+    }
+}

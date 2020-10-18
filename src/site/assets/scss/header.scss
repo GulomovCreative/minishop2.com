@@ -1,0 +1,29 @@
+.header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-image: $gradient;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 570px) {
+    .header {
+        &__top {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+    }
+}

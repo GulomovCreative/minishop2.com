@@ -1,0 +1,50 @@
+.button {
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    transition: all $transition;
+    width: fit-content;
+
+    @include hover {
+        text-decoration: none;
+    }
+
+    &--primary {
+        background-color: $primary;
+        border: 2px solid $primary;
+        color: white;
+
+        @include hover {
+            background-color: darken($primary, 7);
+            border-color: darken($primary, 7);
+            color: $white;
+        }
+    }
+
+    &--outline {
+        border: 2px solid $white;
+        color: $white;
+
+        @include hover {
+            background-color: $white;
+            color: $primary;
+        }
+    }
+
+    &--white {
+        background-color: $white;
+        border: 2px solid $white;
+        color: $primary;
+
+        @include hover {
+            background-color: $white;
+            color: #222328;
+        }
+    }
+}

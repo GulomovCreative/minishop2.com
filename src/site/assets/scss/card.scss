@@ -1,0 +1,81 @@
+.card {
+    $self: &;
+
+    position: relative;
+    box-shadow: $box-shadow;
+    border-radius: .85rem;
+    padding: 3rem;
+    height: calc(100% - #{$grid-gutter-width});
+    margin-bottom: $grid-gutter-width;
+    overflow: hidden;
+
+    &__bg {
+        background-color: $primary;
+        border-radius: 50%;
+        bottom: 0;
+        height: 9rem;
+        left: -55%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        transform: scale(1);
+        transform-origin: left center;
+        transition: transform .25s ease-in;
+        width: 9rem;
+        z-index: 1;
+    }
+
+    @include hover {
+        #{$self}__title,
+        #{$self}__link,
+        #{$self}__text {
+            color: $white;
+        }
+
+        #{$self}__bg {
+            transform: scale(10);
+            transition: transform .7s ease-out;
+        }
+    }
+
+    &__header {
+        position: relative;
+        z-index: 20;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        position: relative;
+        z-index: 20;
+    }
+
+    &__title {
+        color: #222328;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        transition: color $transition;
+    }
+
+    &__text {
+        color: $text-gray;
+        line-height: 1.5;
+        transition: color $transition;
+    }
+
+    &__footer {
+        position: relative;
+        z-index: 20;
+        margin-top: 20px;
+    }
+
+    &__link {
+        transition: color $transition;
+
+        @include hover {
+            text-decoration: none;
+        }
+    }
+}
