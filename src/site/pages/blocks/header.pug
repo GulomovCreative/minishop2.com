@@ -1,0 +1,77 @@
+header.section-header
+  section.header-main.border-bottom
+    .container
+      .row.align-items-center
+        .col-lg-3.col-4.col-sm-4
+          a.brand-wrap(href='#')
+            img.logo(src='./assets/images/logo.png')
+        .col-lg-6.col-sm-8.col-8
+          form.search(action='#')
+            .input-group
+              input.form-control(type='text' placeholder='Search')
+              .input-group-append
+                button.btn.btn-primary(type='submit')
+                  i.fa.fa-search
+        .col-lg-3.col-12.col-sm-12
+          .widgets-wrap.d-flex.justify-content-end
+            .widget-header
+              a.icontext(href='#')
+                .icon
+                  i.fa.fa-lg.fa-shopping-cart
+                .text
+                  small.text-muted Basket
+                  br
+                  span 3 items
+            // widget .//
+            .widget-header.dropdown
+              a.ml-3.icontext(href='#' data-toggle='dropdown' data-offset='20,10')
+                .icon
+                  i.fa.fa-lg.fa-user-circle
+                .text
+                  small.text-muted Sign In / Join
+                  br
+                  span
+                    | My account
+                    i.fa.fa-caret-down
+              .dropdown-menu.dropdown-menu-right
+                form.px-4.py-3
+                  .form-group
+                    label Email address
+                    input.form-control(type='email' placeholder='email@example.com')
+                  .form-group
+                    label Password
+                    input.form-control(type='password' placeholder='Password')
+                  button.btn.btn-primary(type='submit') Sign in
+                hr.dropdown-divider
+                a.dropdown-item(href='#') Have account? Sign up
+                a.dropdown-item(href='#') Forgot password?
+
+
+nav.navbar.navbar-expand-lg.navbar-main.border-bottom
+  .container
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#main_nav7" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse(id="main_nav7")
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.pl-0(href="#")
+            strong All category
+        li.nav-item
+          a.nav-link(href="#") Fashion
+        li.nav-item
+          a.nav-link(href="#") Supermarket
+        li.nav-item
+          a.nav-link(href="#") Electronics
+        li.nav-item
+          a.nav-link(href="#") Baby &amp Toys
+        li.nav-item
+          a.nav-link(href="#") Fitness sport
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") More
+          .dropdown-menu
+            a.dropdown-item(href="#") Foods and Drink
+            a.dropdown-item(href="#") Home interior
+            .dropdown-divider
+            a.dropdown-item(href="#") Category 1
+            a.dropdown-item(href="#") Category 2
+            a.dropdown-item(href="#") Category 3

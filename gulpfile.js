@@ -65,12 +65,12 @@ const pathSite = {
     views: 'assets/components/minishop2.com/site/',
   },
   src: {
-    views: 'src/site/*.pug',
+    views: 'src/site/pages/*.pug',
     js: ['src/site/assets/js/*.js', '!src/site/assets/js/_*.*'],
     css: 'src/site/assets/scss/style.scss',
     img: 'src/site/assets/images/**/*.*',
     fonts: 'src/site/assets/fonts/**/*.*',
-    templates: 'src/site/assets/templates/', // Pug templates
+    templates: 'src/site/assets/pages/', // Pug templates
   },
   watch: {
     views: 'src/site/**/*.pug',

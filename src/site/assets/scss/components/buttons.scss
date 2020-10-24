@@ -1,0 +1,97 @@
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: #111;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: calc(1.5rem + 1.75rem + 2px);
+  white-space: nowrap;
+  &:hover {
+    color: #111;
+    text-decoration: none;
+  }
+}
+.btn-success {
+  color: #fff;
+  background-color: #28bb74;
+  border-color: #28bb74;
+  &:hover {
+    color: #fff;
+    background-color: #219b60;
+    border-color: #1f915a;
+  }
+  &:focus {
+    color: #fff;
+    background-color: #219b60;
+    border-color: #1f915a;
+    box-shadow: 0 0 0 0 rgba(72, 197, 137, 0.5);
+  }
+}
+.btn-info {
+  color: #fff;
+  background-color: #3b86ff;
+  border-color: #3b86ff;
+  &:hover {
+    color: #fff;
+    background-color: #156eff;
+    border-color: #0867ff;
+  }
+  &:focus {
+    color: #fff;
+    background-color: #156eff;
+    border-color: #0867ff;
+    box-shadow: 0 0 0 0 rgba(88, 152, 255, 0.5);
+  }
+}
+.btn-dark {
+  color: #fff;
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+  &:hover {
+    color: #fff;
+    background-color: #0c0c0c;
+    border-color: #060606;
+  }
+  &:focus {
+    color: #fff;
+    background-color: #0c0c0c;
+    border-color: #060606;
+    box-shadow: 0 0 0 0 rgba(65, 65, 65, 0.5);
+  }
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #a6a6a6;
+  border-color: #a6a6a6;
+  &:hover {
+    color: #fff;
+    background-color: #939393;
+    border-color: #8d8d8d;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: #939393;
+    border-color: #8d8d8d;
+    box-shadow: 0 0 0 0 rgba(179, 179, 179, 0.5);
+  }
+  &:disabled {
+    color: #fff;
+    background-color: #a6a6a6;
+    border-color: #a6a6a6;
+  }
+}
+button:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+}
