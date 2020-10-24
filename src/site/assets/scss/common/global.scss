@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    background-color: #fff;
     color: #111;
     font-family: 'Montserrat';
     font-size: 1rem;
@@ -16,7 +17,9 @@ body {
     margin: 0;
     text-align: left;
 }
-
+body > .container {
+    padding: 60px 15px 0;
+}
 img {
     max-width: 100%;
 }
@@ -99,6 +102,14 @@ h6 {
 .px-8 {
     padding-right: 2.5rem !important;
 }
+.pb-6,
+.py-6 {
+    padding-bottom: 1.5rem !important;
+}
+.pt-6,
+.py-6 {
+    padding-top: 1.5rem !important;
+}
 .pb-7,
 .py-7 {
     padding-bottom: 2rem !important;
@@ -118,6 +129,12 @@ h6 {
 .pt-12,
 .py-12 {
     padding-top: 6rem !important;
+}
+.text-gray-300 {
+    color: #bababa !important;
+    &[href]:hover {
+        color: #a6a6a6 !important;
+    }
 }
 .lift {
     transition: all 0.2s ease-in-out;

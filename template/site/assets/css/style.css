@@ -10110,12 +10110,17 @@ html {
 }
 
 body {
+  background-color: #fff;
   color: #111;
   font-family: 'Montserrat';
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
   text-align: left;
+}
+
+body > .container {
+  padding: 60px 15px 0;
 }
 
 img {
@@ -10211,6 +10216,16 @@ h6 {
   padding-right: 2.5rem !important;
 }
 
+.pb-6,
+.py-6 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 1.5rem !important;
+}
+
 .pb-7,
 .py-7 {
   padding-bottom: 2rem !important;
@@ -10234,6 +10249,14 @@ h6 {
 .pt-12,
 .py-12 {
   padding-top: 6rem !important;
+}
+
+.text-gray-300 {
+  color: #bababa !important;
+}
+
+.text-gray-300[href]:hover {
+  color: #a6a6a6 !important;
 }
 
 .lift {
@@ -16679,7 +16702,9 @@ readers do not read off random characters that represent icons */
   }
 }
 
-.footer-copyright {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.section-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
