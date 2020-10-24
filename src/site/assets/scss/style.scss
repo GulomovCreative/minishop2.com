@@ -4,6 +4,9 @@
 @import 'components/buttons';
 
 @import 'fonts';
+@import '../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../../../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
 @import 'sections/header';
 @import 'sections/footer';

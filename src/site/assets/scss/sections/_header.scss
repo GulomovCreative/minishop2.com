@@ -1,61 +1,62 @@
-/* ================== header main ==================  */
-.header-main {
-  position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.brand-wrap,
-.navbar-brand {
-  .logo {
-    margin-right: 7px;
-    max-height: 42px;
-    display: inline-block;
-  }
-}
-
-.navbar-main {
-  .nav-link {
-    font-weight: 600;
-    color: #1c1c1c;
-    &:hover {
-      color: #666;
+.navbar {
+    padding: 1.5rem 1rem;
+    &-brand {
+        color: #111;
+        font-size: 1.75rem;
+        font-weight: 600;
     }
-  }
+}
+.navbar-light {
+    .navbar-toggler {
+        color: #111;
+        border-color: transparent;
+        &-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 20 15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M20 0H0V1.75561H20V0Z' fill='%23111'/%3e%3cpath d='M20 6.5685H0V8.32412H20V6.5685Z' fill='%23111'/%3e%3cpath d='M20 13.2437H0V15H20V13.2437Z' fill='%23111'/%3e%3c/svg%3e");
+        }
+    }
+    .navbar-nav .nav-link {
+        color: #111;
+        font-weight: 500;
+        outline: 0;
+        box-shadow: none;
+        &:focus,
+        &:hover {
+            color: #ff6f61;
+        }
+    }
+    .dropdown-menu {
+        padding: 0;
+    }
 }
 
-.widget-header {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  a {
-    color: $body-color;
-    &:hover {
-      color: $primary;
+.list-styled {
+    list-style-type: none;
+    padding-left: 0;
+    &-link {
+        display: block;
+        color: #525252;
+        &:focus,
+        &:hover {
+            color: #111;
+        }
     }
-  }
-  i {
-    color: $gray-500;
-  }
-  form {
-    min-width: 280px;
-  }
-  .title {
-    display: block;
-  }
-  .notify {
-    position: absolute;
-    top: -3px;
-    right: -10px;
-  }
-  &:hover {
-    i {
-      color: $primary;
+    &-item + .list-styled-item {
+        margin-top: 0.75em;
     }
-  }
 }
-
-/* desktop only */
-@media all and (min-width: 768px) {
+.font-size-sm {
+    font-size: 0.9375rem;
 }
-/* desktop only .end */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .border-bottom-lg-0 {
+        border-bottom: 0 !important;
+    }
+    .ml-lg-n4,
+    .mx-lg-n4 {
+        margin-left: -1rem !important;
+    }
+}
